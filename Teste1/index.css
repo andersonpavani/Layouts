@@ -1,0 +1,158 @@
+body {
+    font-family: Source Sans Pro,Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    font-weight: lighter;
+    color: #fdfdfd;
+    background-color: #006dad;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header {
+    background-color: #2573B7;
+    border-bottom: 1px solid #2067A4;
+    height: 60px;
+    display: flex;
+    overflow: visible;
+}
+
+.logo {
+    background-color: #2573B7;
+    width: 260px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #2067A4;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+}
+
+.logo h1 {
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.menu-user {    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+}
+
+.menu-user .label {
+    color: #ddd;
+    font-weight: lighter;
+}
+
+.menu-user h1 {
+    font-size: 16px;
+    margin-left: 15px;
+    font-weight: bolder;
+}
+
+.body {
+    display: flex;
+    flex: 1;
+}
+
+.menu {
+    width: 261px;
+    height: 100%;
+    background-color: #226DAD;
+    border-bottom: 1px solid #2067A4;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-itens {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.version {
+    height: 25px;
+    background-color: #2573B7;
+    border-top: 1px solid #2067A4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.version p {
+    font-size: 11px;
+}
+
+.content {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    /* padding: 20px; */
+    /* box-shadow: inset 2px 2px 5px #a7a7a7; */
+}
+
+.window-title {
+    background-color: #ECECEC;
+    border-bottom: 1px solid #D3D3D3;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.title {
+    background-color: #607d8b;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.title p {
+    margin-left: 10px;
+}
+
+.window-search {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    padding: 20px;
+}
+
+.window-search input {
+    flex: 1;
+    border: 1px solid #E1E2E1;
+    border-radius: 5px;
+    padding: 10px 10px;
+}
+
+.window-body {
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: 0px 0px 7px #a7a7a7;
+    display: flex;
+    flex: 1;
+}
+
+.lista-pessoas {
+    background-color: white;
+    border-right: 1px solid #e1e2e1;
+    width: 280px;
+}
+
+.font-dark {
+    color: white;
+}
+
+.font-light {
+    color: #222;
+}
