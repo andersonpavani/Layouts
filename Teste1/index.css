@@ -1,9 +1,8 @@
 body {
-    font-family: Source Sans Pro,Helvetica,Arial,sans-serif;
+    /* font-family: Source Sans Pro,Helvetica,Arial,sans-serif; */
     font-size: 12px;
-    font-weight: lighter;
     color: #fdfdfd;
-    background-color: #006dad;
+    background-color: #226DAD;
 }
 
 .app {
@@ -13,21 +12,23 @@ body {
 }
 
 .header {
-    background-color: #2573B7;
-    border-bottom: 1px solid #2067A4;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
     height: 60px;
     display: flex;
     overflow: visible;
 }
 
 .logo {
-    background-color: #2573B7;
+    /* background-color: #2573B7; */
+    background-color: rgba(255, 255, 255, 0.04);
     width: 260px;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-right: 1px solid #2067A4;
+    border-right: 1px solid rgba(0, 0, 0, 0.12);
+    /* border-right: 1px solid #2067A4; */
+
 }
 
 .logo img {
@@ -36,9 +37,11 @@ body {
 }
 
 .logo h1 {
+    margin: 0px;
     margin-left: 10px;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
+    letter-spacing: 1px;
 }
 
 .menu-user {    
@@ -48,15 +51,42 @@ body {
     flex: 1;
 }
 
-.menu-user .label {
-    color: #ddd;
-    font-weight: lighter;
+.igreja {
+    font-size: 16px;
+    display: flex;
+    align-content: center;
+    border-radius: 6px;
+    padding: 6px 8px; 
+    margin-left: 15px;
+    cursor: pointer;
 }
 
-.menu-user h1 {
+.igreja:hover {
+    background-color: rgba(255, 255, 255, 0.06);
+}
+
+.igreja h1 {
     font-size: 16px;
-    margin-left: 15px;
-    font-weight: bolder;
+    margin: 0px;
+    margin-left: 7px;
+    font-weight: normal;
+}
+
+.user {
+    display: flex;
+    font-size: 14px;
+    border-radius: 6px;
+    padding: 6px 8px; 
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.user:hover {
+    background-color: rgba(255, 255, 255, 0.06);
+}
+
+.user p {
+    margin: 0px 7px;
 }
 
 .body {
@@ -65,10 +95,9 @@ body {
 }
 
 .menu {
-    width: 261px;
+    width: 260px;
     height: 100%;
-    background-color: #226DAD;
-    border-bottom: 1px solid #2067A4;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
     display: flex;
     flex-direction: column;
 }
@@ -81,8 +110,8 @@ body {
 
 .version {
     height: 25px;
-    background-color: #2573B7;
-    border-top: 1px solid #2067A4;
+    background-color: rgba(255, 255, 255, 0.04);;
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -90,6 +119,7 @@ body {
 
 .version p {
     font-size: 11px;
+    margin: 0px;
 }
 
 .content {
@@ -97,56 +127,85 @@ body {
     display: flex;
     flex-direction: column;
     flex: 1;
-    /* padding: 20px; */
-    /* box-shadow: inset 2px 2px 5px #a7a7a7; */
 }
 
 .window-title {
     background-color: #ECECEC;
-    border-bottom: 1px solid #D3D3D3;
-    height: 60px;
+    color: #555;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    padding: 12px;
     display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
+    justify-content: space-between;
+    font-size: 14px;
 }
 
 .title {
-    background-color: #607d8b;
-    height: 30px;
     display: flex;
-    align-items: center;
+    margin: 0px;
+    padding: 0px;
 }
 
 .title p {
-    margin-left: 10px;
+    margin: 0px 2px;
 }
 
-.window-search {
+.title i {
+    margin: 0px 2px;
+}
+
+.icons {
     display: flex;
-    align-items: center;
-    flex: 1;
-    padding: 20px;
+    align-content: center;
+    /* font-size: 16px; */
 }
 
-.window-search input {
-    flex: 1;
-    border: 1px solid #E1E2E1;
-    border-radius: 5px;
-    padding: 10px 10px;
+.icons i {
+    margin: 0px 7px;
+    cursor: pointer;
 }
 
-.window-body {
-    background-color: white;
-    border-radius: 2px;
-    box-shadow: 0px 0px 7px #a7a7a7;
+.icons i:hover {
+    color: #226DAD;
+}
+
+.janela {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 25px;
+}
+
+.div-buscar {
+    display: flex;
+}
+
+#btn-add {
+    display: flex;
+    margin-left: 12px;
+}
+
+#btn-add p {
+    margin: 0px;
+    margin-left: 5px;
+}
+
+.tabela {
+    margin-top: 25px;
+}
+
+.linha {
+    cursor: pointer;
+}
+
+.formulario {
     display: flex;
     flex: 1;
+    margin-top: 25px;
 }
 
-.lista-pessoas {
-    background-color: white;
-    border-right: 1px solid #e1e2e1;
-    width: 280px;
+.formulario-indice {
+    width: 250px;
+    border-right: 1px solid rgba(0, 0, 0, 0.12);
 }
 
 .font-dark {

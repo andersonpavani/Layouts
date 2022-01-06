@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="reset.css">
+    <!-- <link rel="stylesheet" href="reset.css"> -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js" defer></script>
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="index.css">
 
     <title>Church</title>
@@ -15,10 +18,13 @@
         <div class="header">
             <div class="logo">
                 <img src="./imagens/logo.svg" alt="Logo Igreja">
-                <h1>Little Church Backend</h1>
+                <h1>Little Church Office</h1>
             </div>
             <div class="menu-user">
-                <h1><span class="label">Igreja: </span>Igreja Batista no Bairro Universitário</h1>
+                <div class="igreja">
+                    <i class="bi bi-building"></i><h1>Igreja Batista no Bairro Universitário</h1>
+                </div>
+                <div class="user"><i class="bi bi-person"></i><p>Anderson Pavani</p><i class="bi bi-caret-down-fill"></i></div>
             </div>
         </div>
         <div class="body">
@@ -32,18 +38,71 @@
             </div>
             <div class="content">
                 <div class="window-title">
-                    <!-- <div class="title">
-                        <p class="font-dark">Cadastro de Membros</p>
+                    <div class="title">
+                        <p>Membros</p><i class="bi bi-chevron-right"></i><i class="bi bi-people-fill"></i><p>Cadastro de Membros</p>
                     </div>
-                    <div class="window-search">
-                        <input type="search" id="campo-busca" placeholder="Digite parte do nome para buscar">
-                    </div> -->
+                    <div class="icons">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-three-dots-vertical"></i>
+                    </div>
                 </div>
-                <!-- <div class="window-body">
-                    <div class="lista-pessoas">
-                        ...
+                <div class="janela">
+                    <div class="div-buscar">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Informe parte do nome para buscar" aria-label="Example text with button addon" aria-describedby="botao-buscar">
+                            <button class="btn btn-primary" type="button" id="botao-buscar"><i class="bi bi-search"></i></button>
+                        </div>
+                        <button id="btn-add" class="btn btn-success" type="button"><i class="bi bi-person-plus-fill"></i><p>Adicionar</p></button>
                     </div>
-                </div> -->
+                    <div class="tabela">
+                        <table class="table table-hover">
+                            <thead class="table-light">
+                                <tr>
+                                    <th scope="col">Id</th>
+                                    <th scope="col">Relação</th>
+                                    <th scope="col">Nome</th>
+                                    <th scope="col">Telefone</th>
+                                    <th scope="col">Endereço</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="linha">
+                                    <th scope="row">1</th>
+                                    <td>Membro</td>
+                                    <td>Anderson Campos Pavani</td>
+                                    <td>(67) 9 8100-2600</td>
+                                    <td>Rua Artur Nogueira, 110, Bloco 13 Ap 04, Bairro Paulo Coelho Machado, Campo Grande - MS</td>
+                                </tr>
+                                <tr class="linha">
+                                    <th scope="row">2</th>
+                                    <td>Membro</td>
+                                    <td>Eli Regina de Melo Costa</td>
+                                    <td>(67) 9 8464-8868</td>
+                                    <td>Rua Artur Nogueira, 110, Bloco 13 Ap 04, Bairro Paulo Coelho Machado, Campo Grande - MS</td>
+                                </tr>
+                                <tr class="linha">
+                                    <th scope="row">3</th>
+                                    <td>Coligado</td>
+                                    <td>Antônio Caé Costa</td>
+                                    <td>(67) 9 8100-2600</td>
+                                    <td>Rua José Américo de Almeida, 363, Bairro Jardim Julieta, Campo Grande - MS</td>
+                                </tr>
+                                <tr class="linha">
+                                    <th scope="row">4</th>
+                                    <td>Visitante</td>
+                                    <td>José Angelo Farias Pavani</td>
+                                    <td>(67) 9 8100-2600</td>
+                                    <td>Rua de Praia Grande, Praia Grande - SP</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="formulario">
+                        <div class="formulario-indice">
+                            
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>    

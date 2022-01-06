@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="index.css">
+
+    <title>Grid Layout</title>
+</head>
+<body>
+    <div class="app">
+        <header class="cabecalho-logo clarear-1 borda-direita borda-fundo">
+
+            <img src="./imagens/logo.svg" alt="Logo Igreja"><h1 class="fonte-branca">Little Church Office</h1>
+
+        </header>
+
+        <header class="cabecalho">
+            <div class="botao-flat fonte-branca">
+                <spam class="material-icons md-7 fonte-18">maps_home_work</spam> Igreja Batista no Bairro Universitário
+            </div>
+            <div class="botao-flat fonte-branca">
+                <spam class="material-icons md-4 fonte-18">person</spam>Anderson Pavani<spam class="material-icons fonte-18 me-4">arrow_drop_down</spam>
+            </div>
+        </header>
+
+        <nav class="menu fonte-branca">
+
+            <div class="menu-item-pc">
+                <div>
+                    <spam class="material-icons fonte-18 md-7">dashboard</spam>Painel de Controle
+                </div>
+            </div>
+
+            <div class="menu-categoria-aberta">
+                <div class="agrupador">
+                    <spam class="material-icons fonte-18 md-7">star</spam>
+                    Favoritos
+                </div>
+                <spam class="material-icons fonte-18 me-4">arrow_drop_down</spam>
+            </div>
+            <div class="menu-categoria-janela">
+
+                <div class="menu-item">
+                    <div>
+                        <spam class="material-icons fonte-18 md-7">people</spam>Cadastro de Membros
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div>
+                        <spam class="material-icons fonte-18 md-7">archive</spam>Lançamento de Dízimos e Ofertas
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div>
+                        <spam class="material-icons fonte-18 md-7">unarchive</spam>Lançamento de Pagamentos
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div>
+                        <spam class="material-icons fonte-18 md-7">article</spam>Relatório Balancete
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-categoria-fechada">
+                <div class="agrupador">
+                    <spam class="material-icons fonte-18 md-7">people</spam>
+                    Membros
+                </div>
+                <spam class="material-icons fonte-18 me-4">arrow_right</spam>
+            </div>
+            <div class="menu-categoria-fechada">
+                <div class="agrupador">
+                    <spam class="material-icons fonte-18 md-7">inventory_2</spam>
+                    Lançamentos
+                </div>
+                <spam class="material-icons fonte-18 me-4">arrow_right</spam>
+            </div>
+            <div class="menu-categoria-fechada">
+                <div class="agrupador">
+                    <spam class="material-icons fonte-18 md-7">article</spam>
+                    Relatórios
+                </div>
+                <spam class="material-icons fonte-18 me-4">arrow_right</spam>
+            </div>
+        </nav>
+
+        <footer class="rodape-menu clarear-1 borda-topo">
+            <P>Desenvolvido por Anderson Pavani<br>Versão 1.0.0.1</P>
+        </footer>
+        <main class="principal">
+
+            <div class="topo-janela fundo-cinza-claro">
+                <div class="titulo-janela">
+                    <h1><spam class="material-icons" style="margin-right: 12px;">people</spam>Membros<span class="material-icons fonte-18 fonte-cinza">chevron_right</span>Cadastro de Membros</h1>
+                </div>
+                <div class="botoes-topo-janela">
+                    <spam class="material-icons fonte-18">star</spam><spam class="material-icons fonte-18">menu</spam>
+                </div>
+            </div>
+
+            <div class="painel-flex">
+                <div class="form-edit-buscar md-12">
+                    <input type="search" name="edit-busca" id="edit-busca" placeholder="Digite parte do nome para buscar">
+                    <button>
+                        <span class="material-icons">search</span>
+                    </button>
+                </div>
+
+                <button class="form-botao azul"><span class="material-icons">person_add</span>Adicionar</button>
+            </div>
+
+        </main>
+    </div>
+</body>
+</html>
